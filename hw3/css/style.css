@@ -217,9 +217,6 @@ hr {
     flex-direction: row;
     border-radius: 8px;
     overflow: hidden;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
 }
 
 .block1_form_text {
@@ -490,6 +487,8 @@ hr {
     border-radius: 5px;
     text-align: center;
     background-color: #24c5a1;
+    font-family: 'Roboto';
+    font-weight: 500;
     font-size: 14px;
     color: #fff;
     display: flex;
