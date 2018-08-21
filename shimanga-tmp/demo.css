@@ -1,0 +1,246 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+/* html5 blocks */
+
+header,
+footer,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+audio,
+video {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a {
+    color: red;
+}
+
+ul {
+    margin: 10px 0;
+    padding: 0 0 0 20px;
+}
+
+ul li {
+    padding: 0 0 0 10px;
+    list-style-type: square;
+}
+
+#container {
+    background: #E0D9A8;
+    width: 640px;
+    padding: 20px;
+    margin: 20px auto;
+    border: solid 10px #D7C992;
+    border-radius: 50px;
+}
+
+#header {
+    background: #794639;
+    padding: 20px;
+    border-radius: 50px;
+    border: solid 10px #D7C992;
+    margin: -10px -10px 0 -10px;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    margin: 10px;
+}
+
+p {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 16px 0;
+}
+
+#content {
+    padding: 40px;
+}
+
+#content pre {
+    background: #0a0;
+    color: #fff;
+    padding: 8px;
+    border: solid 1px #090;
+}
+
+#footer {
+    margin: 0 -10px -10px -10px;
+    border-radius: 0 0 40px 40px;
+    padding: 40px;
+    border: solid 10px #ddd;
+    border-width: 0 10px 10px 10px;
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, rgba(238, 238, 238, 1), rgba(170, 170, 170, 1));
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left, rgba(238, 238, 238, 1), rgba(170, 170, 170, 1));
+    /* Chrome 7+ & Safari 5.03+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(238, 238, 238, 1)), color-stop(1, rgba(170, 170, 170, 1)));
+    /* IE5.5 - IE7 */
+    filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=#FFEEEEEE, EndColorStr=#FFAAAAAA);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFAAAAAA)"
+}
+
+#footer p {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.player-demo {
+    margin: 20px 0 0 0;
+}
+
+.player-demo h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: #000 0 1px 1px;
+    margin: 0 0 5px 0;
+}
+
+.command {
+    display: block;
+    margin: 0 0 2px;
+    padding: 3px;
+    background: #eee;
+    border: solid 1px #aaa;
+    cursor: pointer;
+}
+
+.command:hover {
+    border-color: #111;
+}

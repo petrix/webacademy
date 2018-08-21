@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shimichanga - Audio wrapper for IE6 and up</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+	<script>
+	if (typeof window.console == 'undefined') {
+		
+		
+		var c = document.createElement('div');
+		c.style.height = '200px';
+		c.style.width = '100%';
+		c.style.overflow = 'auto';
+		c.style.position = 'fixed';
+		c.style.bottom = '0';
+		c.style.left = '0';
+		c.style.background = '#fff';
+		c.style.border = 'solid 2px red';
+		
+		window.onload = function() {
+			document.body.appendChild(c);
+		}
+		window.console = {
+			log: function() {
+				
+				var s = 'LOG: ';
+				for (var i=0, il=arguments.length; i<il; i++) {
+					s += arguments[i] + ', ';
+				}
+			
+				var t = document.createElement('div');
+				t.innerHTML = s;
+				
+				c.appendChild(t);
+			}
+			
+		}
+		
+	}
+	</script>
+	
+	<link href="demo.css" rel="stylesheet" />
+	
+	<script src="src/js/shimi-utility.js"></script>
+	<script src="src/js/shimi-wrapper.js"></script>
+	<script src="src/js/shimi-renderer-html5.js"></script>
+	<script src="src/js/shimi-renderer-flash.js"></script>
+	<script src="src/js/shimi-renderer-youtube.js"></script>
+	
+	<!-- Optional: Javascript MP3 library -->
+	<!--
+	<script src="src/js/lib/jsmad.min.js"></script>
+	<script src="src/js/lib/audiolib.min.js"></script>
+	<script src="src/js/shimi-renderer-jsmad.js"></script>
+	-->
+	
+	<!-- Optional player -->
+	<link href="src/css/shimi-player.css" rel="stylesheet" />
+	<script src="src/js/shimi-player.js"></script>
+	
+
+</head>
+<body>
+
+<div id="container">
+	
+	<h1>Shimichanga</h1>
+	
+	<p>Experimental HTML5 audio/video shim with fully native HTML5 syntax wrapped around HTML5, Flash, YouTube, JSMad, and
+	other libraries. <a href="http://github.com/johndyer/shimichanga">github.com/johndyer/shimichanga</a>.</p>
+	
+	
+	<div class="players" id="player-container">
+
+		
+
+		<h2>Video Player</h2>
+
+		<video id="player1" width="640" height="360" poster="media/big_buck_bunny.jpg" preload="none" >
+
+			<source src="media/big_buck_bunny.mp4" type="video/mp4" /> 
+			<source src="media/big_buck_bunny.webm" type="video/webm" /> 			
+			<!--			
+			<source src="http://youtu.be/xmWuqd5y77M" />
+			-->
+		</video>
+		
+		<div id="player1-renderename"></div>
+		
+		<div id="commands">
+			<span class="command">
+				document.getElementById('player1').src = 'media/big_buck_bunny.mp4'; document.getElementById('player1').load();
+			</span>
+			<span class="command">
+				document.getElementById('player1').src = 'media/big_buck_bunny.webm'; document.getElementById('player1').load();
+			</span>
+			<span class="command">
+				document.getElementById('player1').src = 'media/echo-hereweare.mp4'; document.getElementById('player1').load();
+			</span>
+			<span class="command">
+				document.getElementById('player1').src = 'media/echo-hereweare.webm'; document.getElementById('player1').load();
+			</span>	
+			<span class="command">
+				document.getElementById('player1').src = 'http://www.youtube.com/watch?feature=player_embedded&v=Vof3CzSXtAI';
+			</span>	
+			<span class="command">
+				document.getElementById('player1').src = 'http://www.youtube.com/watch?v=9bZkp7q19f0';
+			</span>
+			<span class="command">
+				document.getElementById('player1').src = 'http://youtu.be/xmWuqd5y77M';
+			</span>				
+						
+			<span class="command">
+				document.getElementById('player1').load();
+			</span>										
+			<span class="command">
+				document.getElementById('player1').play();
+			</span>										
+			<span class="command">
+				document.getElementById('player1').pause();
+			</span>										
+			<span class="command">
+				document.getElementById('player1').muted = false;
+			</span>
+			<span class="command">
+				document.getElementById('player1').muted = true;
+			</span>											
+			<span class="command">
+				document.getElementById('player1').volume = 0.5;
+			</span>												
+			<span class="command">
+				document.getElementById('player1').volume = 1;
+			</span>	
+			<span class="command">
+				document.getElementById('player1').currentTime = 26;
+			</span>																								
+		</div>
+
+	</div><!-- /.player -->
+	
+	
+	<div class="players" id="player2-container">
+
+
+		<h2>Audio Player</h2>
+
+		<audio id="player2" preload="none" controls>
+
+			<source src="media/audio.mp3" type="audio/mp3" /> 
+	
+		</audio>
+		
+		<div id="player2-renderename"></div>
+		
+		<div id="commands">
+			<span class="command">
+				document.getElementById('player2').src = 'media/audio.ogg'; document.getElementById('player2').load();
+			</span>
+			<span class="command">
+				document.getElementById('player2').src = 'media/AirReview-Landmarks-02-ChasingCorporate.mp3'; document.getElementById('player2').load();
+			</span>
+								
+			<span class="command">
+				document.getElementById('player2').load();
+			</span>										
+			<span class="command">
+				document.getElementById('player2').play();
+			</span>										
+			<span class="command">
+				document.getElementById('player2').pause();
+			</span>										
+			<span class="command">
+				document.getElementById('player2').muted = false;
+			</span>
+			<span class="command">
+				document.getElementById('player2').muted = true;
+			</span>											
+			<span class="command">
+				document.getElementById('player2').volume = 0.5;
+			</span>												
+			<span class="command">
+				document.getElementById('player2').volume = 1;
+			</span>	
+			<span class="command">
+				document.getElementById('player2').currentTime = 26;
+			</span>																								
+		</div>
+
+	</div><!-- /.player -->	
+	
+		
+</div>  <!-- /#container -->
+		   
+<script>
+
+function createPlayer(id) {
+
+	
+	var shimi = new ShimiPlayer(id, '', false),
+		container = document.getElementById(id + '-container'),
+		uiRendererName = document.getElementById(id + '-renderename');
+	
+	
+	shimi.addEventListener('loadedmetadata', function() {
+		
+		uiRendererName.innerHTML = shimi.src.substring(shimi.src.lastIndexOf('/')+1) + ' : rendered by ' + shimi.rendererName;
+			
+	}, false);
+	
+	
+	var commands = shimichanga.getElementsByClassName('command', container);
+	
+	console.log('commands', commands.length);
+	
+	for  (var i=0, il=commands.length; i<il; i++) {
+		
+		(function(command) {
+		
+			
+				shimichanga.addEvent(command, 'click', function() {
+					
+					eval(command.innerHTML);
+					
+				});	
+			
+		
+		})(commands[i]);
+		
+	
+	}
+}
+
+
+createPlayer('player1');
+createPlayer('player2');
+
+</script>
+	
+<!--
+//createPlayer('audio1', 'http://mp3.jsmad.org/mp3s/114/114579.mp3', false);
+//createPlayer('audio1', 'http://mediaelementjs.com/shimi/audio.mp3', false);
+//createPlayer('audio1', 'http://www.largesound.com/ashborytour/sound/brobob.mp3', false);
+-->
+
+</body>
+</html>
