@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  max-width: 900px;
+  width: 100%;
+  min-width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid__row {
+  display: flex;
+}
+
+.grid__item {
+  width: 16.6667%;
+  height: 150px;
+  border: 1px solid red;
+  display: flex;
+  align-items: stretch;
+  padding: 8px;
+
+}
+.grid__content{
+width: 100%;
+
+}
+
+.grid__item_salmon {
+  background-color: salmon;
+}
+
+.grid__item_yellow {
+  background-color: yellow;
+}
+
+.grid__item_aqua {
+  background-color: aqua;
+}
+
+.grid__item_green {
+  background-color: greenyellow;
+}
+
+.grid__item_blue {
+  background-color: blue;
+}
+
+.grid__item_black {
+  background-color: black;
+}
+
+.grid__item__large {
+  width: 33.3334%;
+}
+
+.grid__item__extra-large {
+  width: 50%;
+}

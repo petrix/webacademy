@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -135,7 +138,7 @@ header {
 
 body {
     margin: 0 auto;
-    /* background: url('../freebie.jpg') no-repeat; */
+    background: url('../freebie.jpg') no-repeat;
     background-position-x: center;
     width: 1300px;
     font-family: 'Roboto';
@@ -158,7 +161,7 @@ hr {
 }
 
 .body {
-    /* opacity: .5; */
+    opacity: .5;
     margin: 0 auto;
     width: 1300px;
     /* height: 100%; */
@@ -808,8 +811,8 @@ block3_video {
 
 .block6_right_row1 {
     background-color: #5cbcff;
-    width: 300px;
-    height: 13px;
+    width: 100%;
+    height: 73px;
     font-family: 'Roboto';
     font-size: 14px;
     letter-spacing: .4px;

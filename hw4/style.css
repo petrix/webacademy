@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+html,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url(./pattern.jpg);
+    position: absolute;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+}
+.mainbody{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.letters{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    color: white;
+}
+.firstrow, .secondrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.home{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: blue;
+
+}
+.contact{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: yellow;
+
+}
+.hire{
+    width: 330px;
+    height: 150px;
+    margin: 15px;
+    background-color: orange;
+}
+.photos{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: lightskyblue;
+}
+.about{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: aquamarine;
+}
+.about2{
+    width:330px;
+    height: 150px;
+    margin: 15px;
+    background-color: green;
+}
+.blog{
+    height: 150px;
+    margin: 15px;
+    background-color: black;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-top: 30px;
+    color: white;
+}
+.blog > div:nth-child(1){
+    font-weight: bold;
+}
+.blog > div:nth-child(2){
+
+}
+
+.contact2{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background-color: blueviolet;
+}
