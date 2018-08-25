@@ -10,24 +10,35 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+.label{
+  color:white;
+  font-family: 'Arial';
+  /* align-self: flex-end; */
+  /* padding: 15px; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.grid__row {
-  display: flex;
-}
 
 .grid__item {
   width: 16.6667%;
-  height: 150px;
+  min-height: 150px;
   border: 1px solid red;
   display: flex;
   align-items: stretch;
   padding: 8px;
+  flex-grow: 0;
+  flex-shrink: 0;
 
 }
 .grid__content{
 width: 100%;
-
+display: flex;
+position: relative;
 }
 
 .grid__item_salmon {
