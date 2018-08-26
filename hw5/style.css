@@ -139,6 +139,7 @@ body {
 
 .row1_col1 {
     background: url(assets/bike_2.jpg) no-repeat;
+    background-position-x: center;
     /* background-color: brown; */
 }
 
