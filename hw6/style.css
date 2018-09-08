@@ -91,6 +91,7 @@ ul {
 .signup {
     background-color: #ff0079;
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .signup:hover {
@@ -270,7 +271,7 @@ ul {
     width: 100%;
     height: 1px;
     background-color: #dfdfdf;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .maincontent_row {
